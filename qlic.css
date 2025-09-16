@@ -1,0 +1,27 @@
+.faq-list {
+  margin-top: 10px;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+  margin: 10px 0;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.faq-item[open] {
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  border-color: rgba(0, 123, 255, 0.35);
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq-answer {
+  color: var(--muted);
+  margin-top: 8px;
+}
