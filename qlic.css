@@ -1,0 +1,146 @@
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.solution-card {
+  background: linear-gradient(180deg, #ffffff, #f5fff8);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.1);
+  border-color: rgba(40, 167, 69, 0.35);
+}
+
+.solution-title {
+  margin: 10px 0 6px;
+  font-size: 18px;
+}
+
+.solution-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+.solution-icon {
+  color: var(--primary);
+}
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.feature-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  background: linear-gradient(180deg, #ffffff, #f6fbff);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(2, 6, 23, 0.08);
+  border-color: rgba(0, 123, 255, 0.35);
+}
+
+.feature-title {
+  margin: 0 0 6px;
+}
+
+.feature-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.testimonial-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 22px rgba(2, 6, 23, 0.06);
+}
+
+.testimonial-card:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--success));
+  border-radius: 16px 16px 0 0;
+  opacity: 0.18;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.testimonial-card .person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-card .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary), var(--success));
+  color: #fff;
+  font-weight: 700;
+}
+
+.testimonial-card .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-card .role {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.review-rating {
+  margin: 4px 0 10px;
+}
+
+.review-rating .stars {
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, var(--primary), var(--success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonial-card .quote {
+  margin: 0;
+  color: var(--text);
+}
