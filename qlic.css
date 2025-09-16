@@ -273,4 +273,28 @@ main {
   color: #e2e8f0;
   margin-top: 2px;
 }
+/* Product overview */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+.metric-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+}
+.metric-icon {
+  font-size: 22px;
+}
+.metric-title {
+  margin: 6px 0 6px;
+  font-size: 18px;
+}
+.metric-text {
+  margin: 0;
+  color: var(--muted);
+}
 
