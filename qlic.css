@@ -297,4 +297,35 @@ main {
   margin: 0;
   color: var(--muted);
 }
+/* About */
+.about-grid {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+.points-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 10px;
+}
+.point-card {
+  display: flex;
+  gap: 10px;
+  background: linear-gradient(180deg, #ffffff, #f5faff);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+.point-icon {
+  font-size: 18px;
+}
+.point-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+.point-text {
+  margin: 0;
+  color: var(--muted);
+}
 
