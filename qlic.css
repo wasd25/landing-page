@@ -110,6 +110,7 @@ main {
 
 .nav-link:hover {
   background: rgba(255, 255, 255, 0.08);
+    color: white;
 }
 
 .nav-toggle {
@@ -181,7 +182,7 @@ main {
 }
 
 .btn-outline {
-  background: #fff;
+  background: #ffffff;
   color: var(--primary);
   border-color: #fff;
 }
@@ -1169,7 +1170,7 @@ body.scrolled .site-header {
     left: 0;
     right: 0;
     border-top: 1px solid var(--border);
-    background: linear-gradient(90deg, #0a63ff, #007bff);
+    background: linear-gradient(90deg, #c2e5f3, #c0d8f1);
     flex-direction: column;
     padding: 12px;
   }
@@ -1179,7 +1180,7 @@ body.scrolled .site-header {
   }
 
   .main-nav .nav-link {
-    color: #fff;
+    color: #007eff;
   }
 
   .nav-toggle {
