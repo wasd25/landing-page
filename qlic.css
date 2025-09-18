@@ -1,17 +1,23 @@
-.price-featured {
-  border: 1px solid transparent;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(135deg, var(--primary), var(--success)) border-box;
-  box-shadow: 0 14px 36px rgba(0, 123, 255, 0.1);
+.price-name {
+  margin: 0 0 8px;
+  font-size: 18px;
 }
 
-.ribbon {
-  position: absolute;
-  top: 12px;
-  right: -8px;
-  background: var(--primary);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 12px;
+.price-amount {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.price-period {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.price-features {
+  margin: 0 0 16px;
+  padding: 0 0 0 18px;
+  color: var(--muted);
 }
