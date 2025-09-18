@@ -1,8 +1,17 @@
 function initPricingPlans() {
-    const buttons = $$(".choose-plan");
-    buttons.forEach((btn) => {
+    const toast = $("#plan-toast");
+
+    $$(".choose-plan").forEach((btn) => {
         btn.addEventListener("click", () => {
-            console.log("Plan seleccionado:", btn.getAttribute("data-plan"));
+            const plan = btn.getAttribute("data-plan") || "";
+
+            if (!toast) return;
+            toast.textContent = `Has elegido el plan ${plan}`;
+            toast.hidden = false;
+
+            setTimeout(() => {
+                toast.hidden = true;
+            }, 2000);
         });
     });
 }
