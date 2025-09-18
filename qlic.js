@@ -408,7 +408,7 @@
 
             // Trust indicators
             "trust.sensors": "Sensores certificados",
-            "trust.uptime": "99.9% uptime",
+            "trust.uptime": "99.9% disponibilidad",
             "trust.cloud": "Dashboard en la nube",
 
             // Device readouts
@@ -599,10 +599,39 @@
         if (learnP) learnP.textContent = tr["hero.more"];
         setText(".badge-live", tr["hero.badge"]);
 
-        // Trust indicators
+        // Trust indicators - CORREGIDO CON MÚLTIPLES SELECTORES
+        // Intenta diferentes selectores comunes para los trust indicators
         setText(".trust-row li:nth-child(1)", tr["trust.sensors"]);
         setText(".trust-row li:nth-child(2)", tr["trust.uptime"]);
         setText(".trust-row li:nth-child(3)", tr["trust.cloud"]);
+
+        // Selectores alternativos en caso de que la estructura sea diferente
+        setText(".trust-indicators li:nth-child(1)", tr["trust.sensors"]);
+        setText(".trust-indicators li:nth-child(2)", tr["trust.uptime"]);
+        setText(".trust-indicators li:nth-child(3)", tr["trust.cloud"]);
+
+        // Más selectores alternativos
+        setText(".trust-list li:nth-child(1)", tr["trust.sensors"]);
+        setText(".trust-list li:nth-child(2)", tr["trust.uptime"]);
+        setText(".trust-list li:nth-child(3)", tr["trust.cloud"]);
+
+        // Por clases específicas si las tienes
+        setText(".trust-sensors", tr["trust.sensors"]);
+        setText(".trust-uptime", tr["trust.uptime"]);
+        setText(".trust-cloud", tr["trust.cloud"]);
+
+        // Por contenido específico (más agresivo)
+        const trustItems = document.querySelectorAll('.trust-row li, .trust-indicators li, .trust-list li, .hero-stats li');
+        trustItems.forEach(item => {
+            const text = item.textContent?.trim();
+            if (text?.includes('Certified') || text?.includes('sensors')) {
+                item.textContent = tr["trust.sensors"];
+            } else if (text?.includes('99.9%') || text?.includes('uptime')) {
+                item.textContent = tr["trust.uptime"];
+            } else if (text?.includes('Cloud') || text?.includes('dashboard')) {
+                item.textContent = tr["trust.cloud"];
+            }
+        });
 
         // Device readouts
         setText(
@@ -893,7 +922,7 @@
             tr["footer.company.about"]
         );
         setText(
-            ".footer-grid .footer-col:nth-child(1) .footer-links li:nth-child(2) a",
+            ".footer-grid .footer-col:nth-child(2) .footer-links li:nth-child(2) a",
             tr["footer.company.services"]
         );
         setText(
