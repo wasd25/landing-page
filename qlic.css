@@ -1,21 +1,17 @@
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 20px;
+.price-featured {
+  border: 1px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, var(--primary), var(--success)) border-box;
+  box-shadow: 0 14px 36px rgba(0, 123, 255, 0.1);
 }
 
-.price-card {
-  position: relative;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 22px;
-  background: #fff;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.price-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.12);
-  border-color: rgba(0, 123, 255, 0.25);
+.ribbon {
+  position: absolute;
+  top: 12px;
+  right: -8px;
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
 }
