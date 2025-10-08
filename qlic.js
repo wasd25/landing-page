@@ -121,12 +121,12 @@
             modal?.setAttribute("hidden", "");
             document.body.style.overflow = "";
         }
-/*
+        /*
         // Event listeners
         openBtn?.addEventListener("click", openModal);
         mobileCta?.addEventListener("click", openModal);
         closeEls.forEach((el) => el.addEventListener("click", closeModal));
-
+        */
         // Close on backdrop click
         modal?.addEventListener("click", (e) => {
             if (e.target === modal) closeModal();
@@ -139,7 +139,7 @@
 
         return { openModal, closeModal };
     }
-*/
+
 
     function initPricingPlans() {
         const toast = $("#plan-toast");
