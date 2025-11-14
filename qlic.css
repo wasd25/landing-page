@@ -1267,4 +1267,51 @@ body.scrolled .site-header {
     border-radius: 999px;
     padding: 14px 18px;
   }
+
+  .about-product-section {
+    padding: 60px 20px;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+
+  .about-product-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .about-product-section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+
+  #about-product .container {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 30px;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  }
 }
