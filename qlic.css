@@ -1314,4 +1314,15 @@ body.scrolled .site-header {
     margin: 0 auto;
     display: block;
   }
+
+  .video-about-team-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  }
 }
